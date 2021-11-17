@@ -1,4 +1,4 @@
-package main
+package burgerserver_test
 
 import (
 	"io"
@@ -8,7 +8,7 @@ import (
 	"github.com/shiyou0130011/burgerserver"
 )
 
-func main() {
+func Example() {
 	s := burgerserver.DefaultServer()
 	s.Logger.SetFlags(log.Llongfile | log.LUTC)
 
